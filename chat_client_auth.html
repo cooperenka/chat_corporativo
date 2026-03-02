@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Corporativo - Autenticación</title>
+    <title>Cooperenka · Chat Corporativo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
         .scrollbar-thin::-webkit-scrollbar { width: 6px; }
         .scrollbar-thin::-webkit-scrollbar-track { background: #f1f1f1; }
-        .scrollbar-thin::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+        .scrollbar-thin::-webkit-scrollbar-thumb { background: #0095d9; border-radius: 3px; }
         @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         .animate-spin { animation: spin 1s linear infinite; }
         #chatMenu { transition: opacity 0.2s, transform 0.2s; }
@@ -21,20 +21,92 @@
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
         
         /* Estilos para el badge de mensajes no leídos */
-        .unread-badge {
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: .8; }
-        }
+        .unread-badge { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .8; } }
         
         /* Grid responsive para emojis */
         @media (max-width: 640px) {
-            .emoji-grid {
-                grid-template-columns: repeat(6, minmax(0, 1fr));
-            }
+            .emoji-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
         }
+
+        /* ── WHATSAPP-STYLE CHAT BACKGROUND ── */
+        .chat-bg-pattern {
+            background-color: #e5ddd5;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' opacity='0.06'%3E%3Ctext x='10' y='20' font-size='14'%3E💬%3C/text%3E%3Ctext x='60' y='45' font-size='11'%3E📎%3C/text%3E%3Ctext x='120' y='25' font-size='13'%3E😊%3C/text%3E%3Ctext x='170' y='50' font-size='10'%3E📷%3C/text%3E%3Ctext x='30' y='75' font-size='12'%3E🔔%3C/text%3E%3Ctext x='90' y='70' font-size='14'%3E✉️%3C/text%3E%3Ctext x='150' y='80' font-size='11'%3E👥%3C/text%3E%3Ctext x='15' y='110' font-size='10'%3E🏢%3C/text%3E%3Ctext x='70' y='105' font-size='13'%3E📱%3C/text%3E%3Ctext x='130' y='115' font-size='12'%3E💼%3C/text%3E%3Ctext x='45' y='140' font-size='14'%3E🔒%3C/text%3E%3Ctext x='110' y='145' font-size='11'%3E📋%3C/text%3E%3Ctext x='170' y='135' font-size='13'%3E⭐%3C/text%3E%3Ctext x='20' y='175' font-size='12'%3E📝%3C/text%3E%3Ctext x='80' y='170' font-size='10'%3E🎯%3C/text%3E%3Ctext x='140' y='180' font-size='14'%3E💡%3C/text%3E%3Ctext x='175' y='170' font-size='11'%3E📊%3C/text%3E%3C/svg%3E");
+        }
+        
+        /* Barra de búsqueda del sidebar */
+        .sidebar-search-input {
+            transition: all 0.2s ease;
+        }
+        .sidebar-search-input:focus {
+            box-shadow: 0 0 0 2px rgba(0, 149, 217, 0.3);
+        }
+        .search-highlight {
+            background: #fef08a;
+            border-radius: 2px;
+            padding: 0 1px;
+        }
+
+        /* ── LIGHTBOX PARA IMÁGENES ── */
+        #imageLightbox {
+            animation: lbFadeIn 0.2s ease-out;
+        }
+        @keyframes lbFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #lightboxImg {
+            transform-origin: center center;
+        }
+
+        /* ── REACCIONES A MENSAJES ── */
+        .reaction-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 3px 8px;
+            border-radius: 14px;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1.5px solid #e0e0e0;
+            background: white;
+            transition: all 0.15s ease;
+            line-height: 1.4;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            max-width: 180px;
+        }
+        .reaction-pill:hover {
+            background: #f5f5f5;
+            transform: scale(1.05);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+        }
+        .reaction-pill.mine {
+            border-color: #0095d9;
+            background: #e3f2fd;
+            box-shadow: 0 1px 4px rgba(0,149,217,0.2);
+        }
+        .reaction-pill.mine:hover {
+            background: #bbdefb;
+        }
+        .reaction-picker-bubble {
+            animation: reactionBubbleIn 0.15s ease-out;
+        }
+        @keyframes reactionBubbleIn {
+            from { opacity: 0; transform: scale(0.8) translateY(4px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        /* ── COOPERENKA CORPORATE STYLES ── */
+        .coop-msg-mine {
+            background: linear-gradient(135deg, #0095d9 0%, #006fa6 100%) !important;
+        }
+        .coop-avatar {
+            background: linear-gradient(135deg, #0095d9, #7bc144) !important;
+        }
+        /* Botón enviar input en azul corporativo */
+        input:focus { outline: none; }
+        ::selection { background: #0095d9; color: white; }
     </style>
 </head>
 <body>

@@ -153,6 +153,8 @@ class ChatHandler(BaseHTTPRequestHandler):
             self._serve_file('chat_client_auth.html', 'text/html')
         elif path == '/chat_client_auth.js':
             self._serve_file('chat_client_auth.js', 'application/javascript')
+        elif path == '/sw.js':
+            self._serve_sw()
         elif path == '/api/users':
             self._get_users()
         elif path == '/api/messages':
@@ -172,6 +174,22 @@ class ChatHandler(BaseHTTPRequestHandler):
         except FileNotFoundError:
             self._set_headers(404)
             self.wfile.write(json.dumps({'error': 'File not found'}).encode())
+
+    def _serve_sw(self):
+        """Servir Service Worker con headers correctos"""
+        try:
+            with open('sw.js', 'rb') as f:
+                content = f.read()
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/javascript; charset=utf-8')
+            self.send_header('Cache-Control', 'no-store')
+            self.send_header('Service-Worker-Allowed', '/')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(content)
+        except FileNotFoundError:
+            self._set_headers(404)
+            self.wfile.write(b'// sw.js not found')
     
     def _get_auth_token(self):
         auth_header = self.headers.get('Authorization', '')

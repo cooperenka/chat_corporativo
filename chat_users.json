@@ -1,26 +1,228 @@
 {
   "arendon98": {
     "username": "arendon98",
-    "password": "4921827727c78dfdebfcb2438de838d59931c4c12a1cb232ed69313932cd414b",
+    "password": "e54fc6b51915e222ba6196747a19ebb8dfa651fd2b46a385a0ded647fbfefda0",
     "displayName": "Alejandro Rendon",
-    "createdAt": 1770235263.3781586
+    "createdAt": 1770235263.3781586,
+    "area": "Sistemas",
+    "isAdmin": true
   },
   "MELIZA21": {
     "username": "MELIZA21",
-    "password": "2945cf746d399ac6b359aa3dd138fb936e9c0b304e583b2b7c821b670ce96e10",
+    "password": "0dac1ad11ede32f9653b8619b074faeb0f1fc032939ab5134d781b951262d96f",
     "displayName": "Meliza Carmona",
-    "createdAt": 1770235381.3997357
+    "createdAt": 1770235381.3997357,
+    "area": "Seguros"
   },
   "tjessica": {
     "username": "tjessica",
-    "password": "b87294d7a8e867f24af965274b9b9847d1d7cb74ea8948255ba6a472cae4d2ae",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
     "displayName": "Jessica Tobón",
-    "createdAt": 1770239258.5571413
+    "createdAt": 1770239258.5571413,
+    "area": "Oficina Medellín"
   },
   "PRUEBA": {
     "username": "PRUEBA",
     "password": "65290cc46ae3d0b337060cb1484aeec6d6b5381179e8e947cba8a6a306da9f5a",
     "displayName": "PRUEBA",
-    "createdAt": 1770297360.6953716
+    "createdAt": 1770297360.6953716,
+    "area": ""
+  },
+  "mariamr89": {
+    "username": "mariamr89",
+    "password": "efe1601a34ebd18072edfbcf33dfa5243a24077ddc5d15e37c2f75fe25a7cd70",
+    "displayName": "Marian Rios",
+    "createdAt": 1771595362.7811868,
+    "area": "Comercial"
+  },
+  "jsuarez": {
+    "username": "jsuarez",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "displayName": "Juan Carlos Suarez",
+    "createdAt": 1771596701.9082859,
+    "area": "Comercial"
+  },
+  "jgiraldo": {
+    "username": "jgiraldo",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "displayName": "Judy Andrea Giraldo",
+    "createdAt": 1771597568.5750527,
+    "area": "Sistemas",
+    "isAdmin": true
+  },
+  "NZAPATA": {
+    "username": "NZAPATA",
+    "password": "1be8c0f146e05ecac0004f32da7d28bd6a4519d9e42570387a7e70af87d4ec46",
+    "displayName": "Nataly Zapata Munera",
+    "createdAt": 1771599227.9250507,
+    "area": "Comercial"
+  },
+  "Kellybetancur": {
+    "username": "Kellybetancur",
+    "password": "d83036ffb5b49a153bc391fd12b4a10df06bbb200f39fed97c331b03b6833ce7",
+    "displayName": "Kelly Betancur",
+    "createdAt": 1771605969.4287446,
+    "area": "Contabilidad"
+  },
+  "Erikacontabilidad": {
+    "username": "Erikacontabilidad",
+    "password": "35a1df2b4b04518c917ed5730e8f1e9660ceee308b1f7f8f85f0207724f3de87",
+    "displayName": "Erika Muñetón",
+    "createdAt": 1771606084.8625298,
+    "area": "Contabilidad"
+  },
+  "esierra": {
+    "username": "esierra",
+    "password": "dd05cc49cd9809cfde07e92492672605e154a2f2e04c737986dc78b45ddb1fd1",
+    "displayName": "Edwin Sierra Sistema 5",
+    "area": "Sistemas",
+    "createdAt": 1771937139.3707693
+  },
+  "lrojas": {
+    "username": "lrojas",
+    "password": "de1619df2bc522a341f274a2508a9395a71be32b7a55f102ac36a6b98fd317a4",
+    "displayName": "Luisa Rojas",
+    "area": "CAD",
+    "createdAt": 1771963432.508791
+  },
+  "cquiroz": {
+    "username": "cquiroz",
+    "password": "b10033b75f05cfe22246c219247d8bfd603cb453556bbce24450bfe3b29a565e",
+    "displayName": "Carolina Quiroz",
+    "area": "Comercial",
+    "createdAt": 1771963980.2591593
+  },
+  "ltaborda": {
+    "username": "ltaborda",
+    "password": "1b365a4dfc8a9d9d77b27e0e07614e4001bb2e0ffb38676277f9155a082913c0",
+    "displayName": "Liliana Taborda Bedoya",
+    "area": "Oficina Medellín",
+    "createdAt": 1771965211.3317032
+  },
+  "cperez": {
+    "username": "cperez",
+    "password": "a8525411d9b2f228cad6dcbf72bffb444c32210d7b117c6538cd962accce467a",
+    "displayName": "Claudia Perez Mesa",
+    "area": "Oficina Medellín",
+    "createdAt": 1771965277.1074533
+  },
+  "vramirez": {
+    "username": "vramirez",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "displayName": "Valentina Ramirez García",
+    "area": "Oficina Medellín",
+    "createdAt": 1771965371.0410435
+  },
+  "acampo": {
+    "username": "acampo",
+    "password": "c59ba22287efed2c760a4823f839d75e55aca4cde59995e7f0ca4a69719c66ba",
+    "displayName": "Angie Campo Sanchez",
+    "area": "Cartera",
+    "createdAt": 1771967098.3033736
+  },
+  "mdiaz": {
+    "username": "mdiaz",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "displayName": "Maira Diaz Gallego",
+    "area": "Ahorros",
+    "createdAt": 1771967127.7185402
+  },
+  "dsanchez": {
+    "username": "dsanchez",
+    "password": "2ba40268aee5b9944cab5a75508ee699e24bab77b02d3ae0835f176e37868f03",
+    "displayName": "Diana Sanchez Estrada",
+    "area": "Cartera",
+    "createdAt": 1771967172.7296677
+  },
+  "prua": {
+    "username": "prua",
+    "password": "2163909115c0f6f1e638bd2c2279387cbe37cc327150a7b5cddfde3d1cd4ef0e",
+    "displayName": "Paula Rúa Ceballos",
+    "area": "Creditos",
+    "createdAt": 1771967223.6246064
+  },
+  "dvera": {
+    "username": "dvera",
+    "password": "2beeb261b3d6868033593baff3290d26bc0bfb7d762665482cee14ab4e56e5ea",
+    "displayName": "Deysi Vera Lopera",
+    "area": "Creditos",
+    "createdAt": 1771967253.2993236
+  },
+  "cvahos": {
+    "username": "cvahos",
+    "password": "6eb0b40131706ccd86cc47c97159f9b13fcc61f6b5f7ab74b828f465a1701899",
+    "displayName": "Catalina Vahos Marin",
+    "area": "Creditos",
+    "createdAt": 1771967293.118894
+  },
+  "jlondono": {
+    "username": "jlondono",
+    "password": "aead9bf8f8e924a8415ea544afd91e87c53e1986af80033aa807e28a2c6ee9c3",
+    "displayName": "Jessica Londoño Galeano",
+    "area": "Comunicaciones",
+    "createdAt": 1771967321.5920866
+  },
+  "vpulido": {
+    "username": "vpulido",
+    "password": "3812938392d5f0d8bfc47877a8cc02af0506e608f6d255db60d2e7deff00f8f8",
+    "displayName": "Viviana Pulido Caceres",
+    "area": "Riesgos",
+    "createdAt": 1771968227.9813488
+  },
+  "jjaramillo": {
+    "username": "jjaramillo",
+    "password": "d70c3c3acd1c8f3d1de0f427c13e56dbd737b9d36cd3123fa8868a6a7692dd63",
+    "displayName": "Jenny Jaramillo Cossio",
+    "area": "Auditoria",
+    "createdAt": 1771968260.792915
+  },
+  "mmarin": {
+    "username": "mmarin",
+    "password": "a78f19952edd18bf02b3c9eb704b088e2120941d6acb22f6f795c42796e60252",
+    "displayName": "Marcela Marin Escobar",
+    "area": "Riesgos",
+    "createdAt": 1771968284.448917
+  },
+  "clopez": {
+    "username": "clopez",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "displayName": "Carlos López Sierra",
+    "area": "Gerencia",
+    "createdAt": 1771968319.5415123
+  },
+  "mospina": {
+    "username": "mospina",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "displayName": "Margarita Ospina Cardona",
+    "area": "Directora Administrativa",
+    "createdAt": 1771968346.8333678
+  },
+  "avalencia": {
+    "username": "avalencia",
+    "password": "8ff9538e65e6781d654b811f88161d12455935ffb8f470815063b6ab6cb7fdff",
+    "displayName": "Alexandra Valencia Florez",
+    "area": "CAD",
+    "createdAt": 1771969045.9870844
+  },
+  "mserna": {
+    "username": "mserna",
+    "password": "ee863d53582bbc962dd7c684cba1319f048e0354e184554320603ae96c6aa88e",
+    "displayName": "Maricela Serna",
+    "area": "Contabilidad",
+    "createdAt": 1772027893.9517078
+  },
+  "lgil": {
+    "username": "lgil",
+    "password": "d4ca6b8388cade1480892282508eac7e3765d59b20d4cac28b3df54a6e66fc09",
+    "displayName": "Lina Gil",
+    "area": "Asistente Administrativa",
+    "createdAt": 1772028422.4006047
+  },
+  "lmejia": {
+    "username": "lmejia",
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "displayName": "Lorena Mejia",
+    "area": "CAD",
+    "createdAt": 1772031472.1763287
   }
 }
